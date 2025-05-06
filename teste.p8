@@ -1,6 +1,8 @@
 pico-8 cartridge // http://www.pico-8.com
 version 42
 __lua__
+--[[tudo que colocar aqui vai
+acontecer uma so vez ao iniciar]]
 function _init()
 	position=63
 end
@@ -15,12 +17,21 @@ function _update()
 end
 
 function _draw()
-	cls() --[[cls limpa a tela
-ela precisa estar aqui pq o sprite
-nao se apaga sozinho]]
+	cls() --cls limpa a tela
+
 	spr(1,position,63)
-	 --numero do sprite e possicao
+	--numero do sprite e possicoes
 end
+
+--notas--
+--[[
+no int aproveitamos e configurams
+as coisas iniciais como cores 
+propriededes nos sprites
+
+cls precisa estar no draw pq os sprite
+nao se apaga sozinho por uptade
+]]
 __gfx__
 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 00000000000dd0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
