@@ -2,7 +2,6 @@ pico-8 cartridge // http://www.pico-8.com
 version 42
 __lua__
 function _init()
-	print("hello word")
 	position=63
 end
 
@@ -16,7 +15,9 @@ function _update()
 end
 
 function _draw()
-	cls() --cls limpa a tela
+	cls() --[[cls limpa a tela
+ela precisa estar aqui pq o sprite
+nao se apaga sozinho]]
 	spr(1,position,63)
 	 --numero do sprite e possicao
 end
