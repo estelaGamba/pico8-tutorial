@@ -4,9 +4,12 @@ __lua__
 --vai acontecer 1 vez ao iniciar
 function _init()
 	position=63
+	
+	player={}
 end
 
 --faz coisas back_ending
+--e chamado a cada frame
 function _update()
  if btn(➡️) then
  	position+=1
@@ -19,6 +22,7 @@ function _update()
 end
 
 --faz coisas frond_ending
+--e atualizado de de ser atulizado
 function _draw()
 	cls() --cls limpa a tela
 
@@ -26,7 +30,6 @@ function _draw()
 	--numero do sprite e possicoes
 	
 	print (bright)
-		--aqui faz aparecer na tela sem ser apagado
 	print (bleft)
 end
 
@@ -35,12 +38,41 @@ end
 a tela e 128x128
 (entao o meio e 63)
 
-no "int" aproveitamos e configurams
+no "int" aproveitamos e configuramos
 as coisas iniciais como cores 
 propriededes nos sprites
 
-cls precisa estar no draw pq os 
-sprites nao se apaga sozinho 
+upgade faz calculos e cria a cada
+frame
+
+draw desenha e recebe as atualizacoes
+
+
+
+
+para os prints aparecerem na tela
+precisa ser no _draw pq nao e 
+apagado pelo cls
+
+para configurar o jogador
+e melhor criar uma "clase"
+	uma clase eh onde diz pro jogo
+	que tipo de coisa e aquilo
+	voce vai ter uma clese para seu
+	jogador, um pro inimigo,
+	outra pra tiros
+uma forma de criar uma classe 
+no pico e criando uma "table"
+]]
+
+
+--[[descopertas
+coisas que descobri mexendo
+
+cls precisa estar no _draw pq os 
+sprites antigos nao se apagam
+sozinho 
+
 ]]
 __gfx__
 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
