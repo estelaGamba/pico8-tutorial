@@ -6,24 +6,28 @@ function _init()
 	position=63
 end
 
---faz coisas backending
+--faz coisas back_ending
 function _update()
  if btn(➡️) then
  	position+=1
- 	button="diretia"--printa se funcionar
+ 	bright="diretia"--printa se funcionar
  end
 	if btn(⬅️) then
 		position-=1
+		bleft="trabalhadores de todo mundo"
 	end
 end
 
---faz coisas frondending
+--faz coisas frond_ending
 function _draw()
 	cls() --cls limpa a tela
 
 	spr(1,position,63)
 	--numero do sprite e possicoes
-	print (button)--faz aparecer na tela
+	
+	print (bright)
+		--aqui faz aparecer na tela sem ser apagado
+	print (bleft)
 end
 
 --notas--
@@ -35,8 +39,8 @@ no "int" aproveitamos e configurams
 as coisas iniciais como cores 
 propriededes nos sprites
 
-cls precisa estar no draw pq os sprite
-nao se apaga sozinho por uptade
+cls precisa estar no draw pq os 
+sprites nao se apaga sozinho 
 ]]
 __gfx__
 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
