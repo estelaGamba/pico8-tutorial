@@ -6,19 +6,27 @@ function _init()
 	position=63
 	
 	--as chaves sao chamada de table
-	player={x=1,y=-1,hat=false}
+	player={
+		x=63, --virgula em toda linha
+		y=63 --nao precisa na ultima
+		}
 end
 
 --faz coisas back_ending
 --e chamado a cada frame
 function _update()
  if btn(➡️) then
- 	position+=1
- 	bright="diretia"--printa se funcionar
+ 	player.x+=1
  end
 	if btn(⬅️) then
-		position-=1
-		bleft="trabalhadores de todo mundo"
+		player.x-=1
+	end
+	
+	if btn(⬆️) then
+ 	player.y-=1
+ end
+	if btn(⬇️) then
+		player.y+=1
 	end
 end
 
@@ -27,11 +35,8 @@ end
 function _draw()
 	cls() --cls limpa a tela
 
-	spr(1,position,63)
+	spr(1,player.x,player.y)
 	--numero do sprite e possicoes
-	
-	print (bright)
-	print (bleft)
 end
 
 --notas--
@@ -63,6 +68,9 @@ e melhor criar uma "clase"
 	outra pra tiros
 uma forma de criar uma classe 
 no pico e criando uma "table"
+
+table funciona tanto em varias
+linhas, quanto numa linha so
 ]]
 
 
