@@ -5,7 +5,8 @@ __lua__
 function _init()
 	position=63
 	
-	player={}
+	--as chaves sao chamada de table
+	player={x=1,y=-1,hat=false}
 end
 
 --faz coisas back_ending
@@ -46,7 +47,6 @@ upgade faz calculos e cria a cada
 frame
 
 draw desenha e recebe as atualizacoes
-
 
 
 
