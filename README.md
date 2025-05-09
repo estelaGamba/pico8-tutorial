@@ -6,8 +6,8 @@ obs: estou programando direto no pico8 que possui uma tela pequena, por isso os 
 .
 
 <p>pra quem nao conhece pico8:
-  video pt-pt: https://www.youtube.com/watch?v=_1lJe36_3JA</p>
-<p>video que me levou a estudar pico8:
+  video pt-pt: https://www.youtube.com/watch?v=_1lJe36_3JA
+<br>video que me levou a estudar pico8:
   https://www.youtube.com/watch?v=Ch57gsOLcbo</p>
 	
 playlist que estou usando pra estudar:
@@ -15,6 +15,6 @@ playlist que estou usando pra estudar:
 
 <p>.</p>
 <p>.</p>
-<p>atualização dos estudos:</p>
-<p>dia 4/5 terminei o primeiro video</p>
-<p>dia 7/5 bora segundo video</p>
+<p>atualização dos estudos:
+<br>dia 5/5 terminei o primeiro video
+<br>dia 7/5 bora segundo video</p>
